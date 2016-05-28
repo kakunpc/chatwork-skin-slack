@@ -19,5 +19,8 @@
       "run_at": "document_idle"
     }
   ],
+  "background": {
+    "scripts": []
+  },
   "permissions": []
 }
