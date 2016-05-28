@@ -1,0 +1,530 @@
+
+#_addButton,
+#_adminNavi,
+#_myStatusIcon,
+#_adminNavi,
+#_openInfomation,
+#_chatFilterMenu,
+#_subContentHandle,
+#_roomListItems .roomIcon,
+#_roomListItems .chatListPin,
+#_roomListItems ._unreadBadge,
+.chatRoomHeaderBtn [role="button"] .icoFontTriangleDown,
+.dateContent .icoFontClock,
+#_sendButton {
+  display: none !important;
+}
+
+#_sideContent,
+#_myStatusButton {
+  background: #4d394b;
+}
+
+#_wrapper {
+  background: transparent;
+}
+#_globalHeader,
+#_globalHeader #_inner {
+  height: 0;
+}
+
+/* 自分 */
+#_myStatusButton {
+  display: block;
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 61px;
+  width: 220px;
+  padding: 30px 0 0 16px;
+  border: 0;
+  border-radius: 0;
+  transition: 0s;
+}
+#_myStatusButton:hover {
+  background: #3e313c;
+}
+#_myStatusButton:hover #_myStatusName {
+  color: #fff;
+}
+#_myStatusName {
+  display: block;
+  max-width: 170px;
+  line-height: 24px;
+  color: rgb(171, 155, 169);
+  font-size: 10px;
+  font-weight: lighter;
+  padding-left: 14px;
+}
+#_myStatusName::before {
+  content: "";
+  position: absolute;
+  top: 38px;
+  left: 18px;
+  display: inline-block;
+  margin-right: 2px;
+  width: 8px;
+  height: 8px;
+  border-radius: 8px;
+  background: #38978D;
+}
+#_myStatusButton .openAction {
+  top: 14px;
+  right: 50px;
+}
+#_myStatusBox {
+  z-index: 999999 !important;
+  top: 54px;
+  left: 0 !important;
+  /*width: 320px !important;*/
+  padding: 10px 30px 10px 10px;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.14902);
+  border-radius: 6px;
+  box-shadow: 0 5px 10px rgba(0,0,0,.12);
+  box-sizing: border-box;
+  transition: 0s;
+}
+#_myStatusBox li {
+  border-radius: .25rem;
+  height: 25px;
+  line-height: 25px;
+}
+#_myStatusBox li:hover {
+  background: #3aa3e3;
+}
+#_myStatusBox li a {
+  padding: 0 8px;
+  color: #2c2d30;
+  font-style: 15px;
+}
+#_myStatusBox li:hover a {
+  color: #fff;
+  background-color: transparent;
+}
+
+/* ロゴ */
+#_logo {
+  z-index: 99999999;
+}
+#_logo img {
+  height: 16px;
+}
+
+/* 検索窓 */
+#_headerSearch {
+  position: absolute;
+  top: 13px;
+  left: auto;
+  right: 110px;
+  padding-left: 16px;
+  border-left: 1px solid #e8e8e8;
+}
+#_headerSearch .search,
+#_headerSearch ._searchBox,
+#_headerSearch .icoFontSearch {
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+}
+#_headerSearch .icoFontSearch {
+  margin-top: 2px;
+  color: #2c2d30;
+  font-size: 16px;
+}
+#_headerSearch .search {
+  padding: 0;
+}
+#_headerSearch ._searchBox {
+  padding: 2px 30px;
+  height: 34px;
+  line-height: 34px;
+  display: block;
+  color: #555459;
+  font-style: 15px;
+  width: 246px;
+  transition: width .15s;
+  border-radius: 5.6px;
+  border: 1px solid rgba(214,214,214,.61);
+}
+#_headerSearch ._searchBox:hover,
+#_headerSearch ._searchBox:focus {
+  border-color: #439fe0;
+}
+#_headerSearch ._searchBox:focus {
+  width: 324px;
+}
+
+/* メンバー一覧（ヘッダ） */
+#_subRoomMemberArea {
+  top: 24px;
+  left: 20px;
+  border: 0;
+  max-width: 140px;
+  height: 1rem;
+  border-right: 1px solid #ccc;
+  padding: 0;
+  margin: 8px 10px 0 0;
+}
+#_subRoomMemberArea .chatRoomMemberListItem,
+#_subRoomMemberArea .chatRoomMemberListItem img,
+#_subRoomMemberArea #_openMemberDetail,
+#_subRoomMemberArea #_subEditMember {
+  width: 14px;
+  height: 14px;
+}
+#_subRoomMemberArea #_openMemberDetail,
+#_subRoomMemberArea #_subEditMember {
+  margin-top: 4px;
+}
+#_subRoomMemberArea #_subEditMember span {
+  font-size: 14px;
+  line-height: 20px;
+}
+#_subRoomMemberArea .chatRoomInfoBtnLabel {
+  font-size: 0;
+}
+#_subRoomMemberArea .chatRoomInfoBtnLabel::before {
+  content: "+";
+  font-size: 12px;
+}
+
+#_informationBox {
+  /*display: block !important;*/
+  position: static;
+  background-color: transparent;
+}
+
+/* サイドバー（チャット詳細） */
+#_subContentArea {
+  margin-top: 25px;
+  width: 365px;
+}
+#_subContentArea #_subRoomInfoArea {
+  border: 0;
+}
+
+/* サイドバー（チャット一覧） */
+#_sideContent {
+  width: 220px;
+  margin-top: 61px;
+  font-family: Slack-Lato,appleLogo,sans-serif;
+}
+#_mainContent {
+  left: 220px;
+}
+#_sideContentTitle {
+  height: 34px;
+  padding-left: 16px;
+  background: none;
+  border: 0;
+}
+#_sideContentTitleText {
+  font-size: 0;
+}
+#_sideContentTitleText::after {
+  cursor: auto;
+  color: rgb(171, 155, 169);
+  font-size: 11.8px;
+  font-weight: normal;
+  content: "channels";
+  text-transform: uppercase;
+}
+
+/* チャットルームを追加 */
+[data-cwui-dd-value="addchat"],
+[data-cwui-dd-value="addcontact"] {
+  left: 180px;
+  position: fixed;
+  font-size: 0;
+  padding: 0;
+}
+[data-cwui-dd-value="addchat"]::after,
+[data-cwui-dd-value="addcontact"]::after {
+  display: inline-block;
+  border-radius: 10px;
+  border: 2px solid #ab9ba9;
+  font-size: 12px;
+  color: #ab9ba9;
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  text-align: center;
+  font-weight: bold;
+  content: "+";
+}
+[data-cwui-dd-value="addchat"] {
+  
+}
+[data-cwui-dd-value="addcontact"] {
+
+}
+#_roomListArea {
+  margin-right: 4px;
+  padding-right: 4px;
+}
+#_roomListArea::-webkit-scrollbar,
+#_roomListArea::-webkit-scrollbar-thumb,
+#_timeLine::-webkit-scrollbar,
+#_timeLine::-webkit-scrollbar-thumb {
+  width: 8px;
+  border-radius: 6px;
+  padding-right: 4px;
+}
+#_roomListArea::-webkit-scrollbar,
+#_timeLine::-webkit-scrollbar {
+  background-color: rgba(0, 0, 0, .1);
+}
+#_roomListArea::-webkit-scrollbar:horizontal,
+#_timeLine::-webkit-scrollbar:horizontal {
+  height:5px;
+}
+#_roomListArea::-webkit-scrollbar-button,
+#_timeLine::-webkit-scrollbar-button {
+  width: 0;
+  height: 0;
+  display: none;
+}
+#_roomListArea::-webkit-scrollbar-corner,
+#_timeLine::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
+#_roomListArea::-webkit-scrollbar-thumb,
+#_timeLine::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, .2);
+  border: 0;
+}
+#_roomListItems {
+  border: none;
+}
+#_roomListItems ._roomLink {
+  border: 0;
+  font-style: 16px;
+}
+#_roomListItems > li {
+  color: #ab9ba9;
+  min-height: 24px;
+  text-shadow: none;
+  padding: 0 .25rem 0 0;
+  border-radius: 0 .25rem .25rem 0;
+  white-space: nowrap;
+}
+#_roomListItems ._roomLink .chatListTitleArea::before,
+#_roomTitle ._roomTitleText::before {
+  display: inline-block;
+  content: "#";
+  margin-right: 4px;
+  margin-left: 4px;
+}
+#_roomListItems > li._roomLink:not(._roomSelected):hover {
+  background: #3e313c;
+}
+#_roomListItems .roomLimitOver {
+  box-shadow: none;
+  padding-left: .6rem;
+}
+#_roomListItems .roomLimitOver *:not(#_roomMore) {
+  display: none;
+}
+#_roomListItems .roomLimitOver #_roomMore {
+  font-size: 0;
+  display: block;
+  color: #fff;
+  min-height: 22px;
+  height: 22px;
+  text-shadow: 0 1px 1px rgba(0,0,0,.25);
+  background-color: #2a80b9;
+  border-radius: 0 0 4.8px 4.8px;
+  border: 0;
+  box-shadow: 0 1px 1px rgba(0,0,0,.5),inset 0 2px 2px rgba(0,0,0,.1);
+}
+#_roomListItems .roomLimitOver #_roomMore::before,
+#_roomListItems .roomLimitOver #_roomMore::after {
+  display: inline-block;
+  font-size: 11.2px;
+  line-height: 22px;
+}
+#_roomListItems .roomLimitOver #_roomMore::before {
+  content: "MORE UNREADS";
+}
+#_roomListItems .roomLimitOver #_roomMore::after {
+  content: "↓";
+  margin-left: 1rem;
+}
+#_roomListItems .chatListMeta {
+  left: 1rem;
+}
+#_roomListItems ._roomSelected {
+  background: #4c9689;
+  color: #fff;
+}
+#_roomListItems .roomUnread {
+  font-weight: 900;
+  color: #fff;
+}
+
+/* 本文エリア */
+#_roomTitle {
+  padding-top: 6px;
+  padding-left: 16px;
+  height: 61px;
+  color: #2c2d30;
+  font-weight: 900;
+  font-size: 19px;
+  line-height: 1.375rem;
+  background: transparent;
+  border-bottom: 1px solid #e8e8e8;
+}
+#_subRoomDescription {
+  position: fixed;
+  top: 34px;
+  left: 390px;
+  z-index: 999999;
+  width: 640px;
+}
+#_subRoomDescription pre {
+  height: 1rem;
+  overflow: hidden;
+}
+#_subRoomDescription pre:hover {
+  height: 28px;
+  overflow-y: scroll;
+}
+div.chatRoomHeaderBtn {
+  padding-right: 8px;
+}
+.chatRoomHeaderBtn [role="button"] {
+  border: 0;
+  margin-top: 10px;
+  padding: 0;
+  background-color: transparent;
+  box-shadow: none;
+  width: 14px;
+}
+.chatRoomHeaderBtn .btnDisable:hover {
+  background-color: transparent;
+}
+.chatRoomHeaderBtn.btnGroup .button + .button {
+  margin-left: 0;
+}
+.chatRoomHeaderBtn [role="button"]:hover {
+  box-shadow: none;
+}
+#_roomTitle ._roomTitleText::before {
+  margin-right: 0;
+}
+#_chatContent {
+  z-index: 9999;
+}
+#_subContent {
+  z-index: 9998;
+}
+#_mainContentExpandRight {
+  position: fixed;
+  height: 60px;
+  right: 383px;
+  width: 28px;
+  line-height: 60px;
+}
+#_mainContentExpandRight:hover {
+  border: 0;
+}
+#_mainContentExpandRight span {
+  position: static;
+  font-size: 26px;
+}
+#_mainContentExpandRight:hover span {
+  opacity: 1;
+}
+#_mainContentExpandRight span.icoFontTriangleRight {
+  background: rgb(242, 242, 245);
+}
+
+/* メッセージ一覧 */
+div.dateContent {
+  left: 46%;
+  color: #2c2d30;
+  font-style: 14px;
+  font-weight: 900;
+  padding: 0 .75rem;
+}
+div.chatTimeLineBorder {
+  border-color: transparent;
+}
+div.dateHead {
+  margin: 1.75rem 0 1.25rem;
+  border-top-color: #e8e8e8;
+}
+div.chatTimeLineMessage .chatTimeLineMessageHover {
+  background-color: #f9f9f9;
+  border-color: transparent;
+}
+div.chatTimeLineMessage .chatTimeLineMessageInner {
+  padding: 1px 26px 2px;
+}
+div.chatTimeLineMessage pre {
+  line-height: 1.375rem;
+  color: #2c2d30;
+}
+div.chatTimeLineMessage .chatName {
+  color: #2c2d30;
+}
+div.chatTimeLineMessage .avatarSpeaker img {
+  border-radius: .2rem;
+}
+div.chatTimeLineMessage .chatTimeLineMessageHover .avatarSpeaker img {
+  border-color: transparent;
+}
+div.chatTimeLineMessage .actionArea {
+  bottom: auto;
+  top: -5px;
+  right: 5px;
+}
+div.chatTimeLineMessage .actionNav {
+  padding: 0;
+  height: 25px;
+  line-height: 25px;
+  border: .0625rem solid rgba(0,0,0,.15);
+  background-color: #fff;
+  border-radius: .375rem;
+  box-shadow: none;
+}
+div.chatTimeLineMessage .actionNav:hover {
+  box-shadow: 0 1px 1px rgba(0,0,0,.1);
+}
+div.chatTimeLineMessage .actionArea .actionNav li {
+  border-right: .0625rem solid rgba(0,0,0,.15);
+  margin: 0;
+  padding: 0 8px 0 11px;
+  height: 26px;
+}
+div.chatTimeLineMessage .actionArea .actionNav li:hover {
+  color: #3aa3e3;
+}
+div.chatTimeLineMessage .actionArea .actionNav li:last-child {
+  border-right: 0;
+}
+div.chatTimeLineMessage .actionNav .showAreatext {
+  font-size: 0;
+}
+
+/* チャット送信部 */
+#_chatSendArea {
+  background-color: transparent;
+}
+#_chatSendArea .chatSendAreaContentShadow {
+  border: 2px solid #E0E0E0;
+  box-shadow: none;
+}
+#_chatSendArea #_chatSendToolbar {
+  border-bottom: 2px solid #E0E0E0;
+}
+#_chatSendArea .chatSendTextarea textarea {
+}
+
+/* ツールチップ */
+.toolTip.toolTipBlack {
+  background: #000;
+  border: 0;
+}
