@@ -22,17 +22,19 @@
 }
 
 #_addButton {
+  top: 10px;
   padding: 0;
   border-radius: 100px;
+  border-color: rgb(171, 155, 169);
   background: transparent;
-  min-width: 20px;
+  min-width: 16px;
   min-height: 0;
-  height: 20px;
+  height: 16px;
 }
 #_addButton .icoFontAddBtn {
-  font-size: 14px;
-  margin: 3px 2px;
-  color: #ddd;
+  font-size: 12px;
+  margin: 2px 0;
+  color: rgb(171, 155, 169);
 }
 
 #_wrapper {
