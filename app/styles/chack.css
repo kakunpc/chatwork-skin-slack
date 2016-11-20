@@ -409,30 +409,24 @@
   background: transparent;
   border-bottom: 1px solid #e8e8e8;
 }
+#_subRoomDescriptionArea,
+#_subRoomDescriptionWrapper,
+#_subRoomDescription {
+  background: #fff;
+}
 #_subRoomDescriptionArea {
   position: fixed;
   z-index: 99999;
-  left: 390px;
-  top: 30px;
+  left: 385px;
+  top: 25px;
   width: 640px;
   height: 1.4em;
 }
-/*#_subRoomDescription {
-  position: fixed;
-  top: 34px;
-  left: 390px;
-  z-index: 999999;
-  width: 640px;
+#_subRoomDescriptionWrapper {
+  padding: 5px;
 }
-#_subRoomDescription pre {
-  height: 1rem;
-  overflow: hidden;
-}
-#_subRoomDescription pre:hover {
-  height: 28px;
-  overflow-y: scroll;
-}
-*/div.chatRoomHeaderBtn {
+
+div.chatRoomHeaderBtn {
   padding-right: 8px;
 }
 .chatRoomHeaderBtn [role="button"] {
@@ -568,4 +562,26 @@ div.chatTimeLineMessage .actionNav .showAreatext {
 .toolTip.toolTipBlack {
   background: #000;
   border: 0;
+}
+
+/* タスク一覧 */
+.chack-tasks {
+  position: fixed;
+  z-index: 99999;
+  bottom: 10px;
+  right: 10px;
+  width: 350px;
+  max-height: 300px;
+  background: rgba(0, 0, 0, .8);
+  padding: 20px 10px;
+  color: #fff;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.chack-tasks li {
+  border-bottom: 1px solid ;
+}
+.chack-tasks .avatar {
+  max-width: 25px;
+  height: initial;
 }
