@@ -585,3 +585,9 @@ div.chatTimeLineMessage .actionNav .showAreatext {
   max-width: 25px;
   height: initial;
 }
+.myStatus .conciergeMenu,
+.myStatus .myStatusButton {
+  display: block;
+  float: left;
+  width: 0;
+}
